@@ -3,7 +3,6 @@ loop = True
 Generate = True
 low = 0
 high = 0
-print(" ")
 
 def wait(sec):
     while sec > 0:
@@ -32,7 +31,6 @@ def main():
         choice = input("Would you like to generate more values? [Y/N] ").lower()
         if choice != "y":
             print("closing program...")
-            print(" ")
             time.sleep(1)
             break
 
