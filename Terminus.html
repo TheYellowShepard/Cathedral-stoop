@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faux Terminal Arg Demo</title>
+  <style>
+    .faux-terminal {
+      background: #222;
+      color: #39ff14;
+      font-family: 'Fira Mono', 'Consolas', monospace;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 14px #111;
+      min-width: 350px;
+      max-width: 500px;
+      margin: 24px auto;
+    }
+    .terminal-prompt {
+      font-weight: bold;
+      color: #fff;
+      margin-right: 4px;
+    }
+    arg {
+      color: #39ff14;
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: inherit;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="faux-terminal">
+    <span class="terminal-prompt">$</span>
+    <arg id="command-arg"></arg>
+  </div>
+
+  <script>
+    // Example: Set the argument value dynamically
+    const argElement = document.getElementById('command-arg');
+    // You could replace this with something dynamic, like from user input
+    argElement.textContent = 'echo Hello, faux terminal!';
+  </script>
+</body>
+</html>
