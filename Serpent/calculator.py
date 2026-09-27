@@ -12,3 +12,4 @@ help=(
 )
 task = input('>>: ')
 
+def addition():
