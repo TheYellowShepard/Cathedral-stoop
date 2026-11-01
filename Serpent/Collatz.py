@@ -6,12 +6,10 @@ If n is odd, multiply it by 3 and add 1.
 #   import numpy as np
 #   import matplotlib.pyplot as plr
 
-print(" ")
 def main():
-    start_value = int(input("Please enter a value > 1: "))
+    start_value = int(input("Please enter a value greater then one: "))
     use_value = start_value
     n = 0
-
     while True:
         test = use_value % 2
         # print("test: " + str(test))   [DEBUG]
@@ -26,7 +24,6 @@ def main():
         elif use_value == 1:
             print("You started with " + str(start_value))
             print("After " + str(n) + " runs you reached 1")
-            print(" ")
             break
 
 main()
